@@ -25,21 +25,24 @@
          <br />
           <button onclick="parse()">解析</button>
       </div>
+      <hr>
+      <div class="help">
+         <strong>使用教学</strong>
+         <div class="help-content">
+            1）复制想解析的视频链接，例如腾讯视频内的会员视频等等。
+            <br>
+            2）粘贴到搜索框，点击解析。
+            <br>
+            3）等待几秒后，浏览器就会自动播放。
+            <br>
+            <p style="color: #ff0000;">**如遇解析失败，请切换线路再试。</p>
+         </div>
+      </div>
     </div>
 <script type = "text/javascript" > function parse() {
     var diz = document.getElementById("url").value;
     var cljurl = document.getElementById("player");
     cljurl.src = "https://okjx.cc/?url=" + diz;
-    console.log("https://okjx.cc/?url=" +  diz)
-}
-
-function dihejk2() {
-    var diz = document.getElementById("url").value;
-    var jkurl = document.getElementById("jk");
-    var jk = document.getElementById("jk").selectedIndex;
-    var jkv = jkurl.options[jk].value;
-    var cljurl = document.getElementById("player");
-    window.open(jkv + diz, "_blank");
 }
 </script>
 </body>
